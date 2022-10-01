@@ -1,0 +1,353 @@
+yarn run v1.22.19
+$ yarn run esr scripts/parse.ts tests/attiny/attiny.xml
+$ /home/seve/workspace/tscircuit/eagle-xml-converter/node_modules/.bin/esr scripts/parse.ts tests/attiny/attiny.xml
+{
+  version: '7.1.0',
+  settings: { alwaysvectorfont: 'no', verticaltext: 'up' },
+  grid: {
+    distance: '0.1',
+    unitdist: 'inch',
+    unit: 'inch',
+    style: 'lines',
+    multiple: '1',
+    display: 'no',
+    altdistance: '0.01',
+    altunitdist: 'inch',
+    altunit: 'inch'
+  },
+  layers: undefined,
+  library: {
+    packages: [
+      {
+        circle: {
+          x: '-4.44',
+          y: '4.4',
+          radius: '0.1',
+          width: '0.2',
+          layer: '21'
+        },
+        wire: [
+          {
+            x1: '-1.9475',
+            y1: '4.425',
+            x2: '1.9475',
+            y2: '4.425',
+            width: '0.127',
+            layer: '21'
+          },
+          {
+            x1: '-1.9475',
+            y1: '-4.425',
+            x2: '1.9475',
+            y2: '-4.425',
+            width: '0.127',
+            layer: '21'
+          },
+          {
+            x1: '-3.705',
+            y1: '4.5725',
+            x2: '3.705',
+            y2: '4.5725',
+            width: '0.05',
+            layer: '39'
+          },
+          {
+            x1: '-3.705',
+            y1: '-4.5725',
+            x2: '3.705',
+            y2: '-4.5725',
+            width: '0.05',
+            layer: '39'
+          },
+          {
+            x1: '-3.705',
+            y1: '4.5725',
+            x2: '-3.705',
+            y2: '-4.5725',
+            width: '0.05',
+            layer: '39'
+          },
+          {
+            x1: '3.705',
+            y1: '4.5725',
+            x2: '3.705',
+            y2: '-4.5725',
+            width: '0.05',
+            layer: '39'
+          }
+        ],
+        text: [
+          {
+            '#text': '>VALUE',
+            x: '-3.965',
+            y: '-4.602',
+            size: '1.27',
+            layer: '27',
+            align: 'top-left'
+          },
+          {
+            '#text': '>NAME',
+            x: '-3.965',
+            y: '4.602',
+            size: '1.27',
+            layer: '25'
+          }
+        ],
+        smd: [
+          {
+            name: '1',
+            x: '-2.47',
+            y: '3.81',
+            dx: '1.97',
+            dy: '0.59',
+            layer: '1',
+            roundness: '25'
+          },
+          {
+            name: '2',
+            x: '-2.47',
+            y: '2.54',
+            dx: '1.97',
+            dy: '0.59',
+            layer: '1',
+            roundness: '25'
+          },
+          {
+            name: '3',
+            x: '-2.47',
+            y: '1.27',
+            dx: '1.97',
+            dy: '0.59',
+            layer: '1',
+            roundness: '25'
+          },
+          {
+            name: '4',
+            x: '-2.47',
+            y: '0',
+            dx: '1.97',
+            dy: '0.59',
+            layer: '1',
+            roundness: '25'
+          },
+          {
+            name: '5',
+            x: '-2.47',
+            y: '-1.27',
+            dx: '1.97',
+            dy: '0.59',
+            layer: '1',
+            roundness: '25'
+          },
+          {
+            name: '6',
+            x: '-2.47',
+            y: '-2.54',
+            dx: '1.97',
+            dy: '0.59',
+            layer: '1',
+            roundness: '25'
+          },
+          {
+            name: '7',
+            x: '-2.47',
+            y: '-3.81',
+            dx: '1.97',
+            dy: '0.59',
+            layer: '1',
+            roundness: '25'
+          },
+          {
+            name: '8',
+            x: '2.47',
+            y: '-3.81',
+            dx: '1.97',
+            dy: '0.59',
+            layer: '1',
+            roundness: '25'
+          },
+          {
+            name: '9',
+            x: '2.47',
+            y: '-2.54',
+            dx: '1.97',
+            dy: '0.59',
+            layer: '1',
+            roundness: '25'
+          },
+          {
+            name: '10',
+            x: '2.47',
+            y: '-1.27',
+            dx: '1.97',
+            dy: '0.59',
+            layer: '1',
+            roundness: '25'
+          },
+          {
+            name: '11',
+            x: '2.47',
+            y: '0',
+            dx: '1.97',
+            dy: '0.59',
+            layer: '1',
+            roundness: '25'
+          },
+          {
+            name: '12',
+            x: '2.47',
+            y: '1.27',
+            dx: '1.97',
+            dy: '0.59',
+            layer: '1',
+            roundness: '25'
+          },
+          {
+            name: '13',
+            x: '2.47',
+            y: '2.54',
+            dx: '1.97',
+            dy: '0.59',
+            layer: '1',
+            roundness: '25'
+          },
+          {
+            name: '14',
+            x: '2.47',
+            y: '3.81',
+            dx: '1.97',
+            dy: '0.59',
+            layer: '1',
+            roundness: '25'
+          }
+        ],
+        name: 'SOIC127P599X175-14N'
+      }
+    ],
+    devicesets: [
+      {
+        description: 'MCU 8-bit ATtiny AVR CISC 8KB Flash 1.8V/2.5V/3.3V/5V 14-Pin SOIC W Tray',
+        gates: undefined,
+        devices: [
+          {
+            connects: undefined,
+            name: '',
+            package: 'SOIC127P599X175-14N'
+          }
+        ],
+        name: 'ATTINY841-SSU',
+        prefix: 'U'
+      }
+    ],
+    symbols: [
+      {
+        wire: [
+          {
+            x1: '10.16',
+            y1: '15.24',
+            x2: '10.16',
+            y2: '-17.78',
+            width: '0.1524',
+            layer: '94'
+          },
+          {
+            x1: '10.16',
+            y1: '-17.78',
+            x2: '-10.16',
+            y2: '-17.78',
+            width: '0.1524',
+            layer: '94'
+          },
+          {
+            x1: '-10.16',
+            y1: '-17.78',
+            x2: '-10.16',
+            y2: '15.24',
+            width: '0.1524',
+            layer: '94'
+          },
+          {
+            x1: '-10.16',
+            y1: '15.24',
+            x2: '10.16',
+            y2: '15.24',
+            width: '0.1524',
+            layer: '94'
+          }
+        ],
+        text: [
+          {
+            '#text': '>NAME',
+            x: '-10.16',
+            y: '16.002',
+            size: '1.778',
+            layer: '95'
+          },
+          {
+            '#text': '>VALUE',
+            x: '-10.16',
+            y: '-20.32',
+            size: '1.778',
+            layer: '96'
+          }
+        ],
+        pin: [
+          {
+            name: 'VCC',
+            x: '15.24',
+            y: '12.7',
+            length: 'middle',
+            direction: 'pwr',
+            rot: 'R180'
+          },
+          {
+            name: 'PB0',
+            x: '15.24',
+            y: '2.54',
+            length: 'middle',
+            rot: 'R180'
+          },
+          { name: 'PA0', x: '-15.24', y: '7.62', length: 'middle' },
+          {
+            name: 'GND',
+            x: '15.24',
+            y: '-15.24',
+            length: 'middle',
+            direction: 'pwr',
+            rot: 'R180'
+          },
+          {
+            name: 'PB1',
+            x: '15.24',
+            y: '0',
+            length: 'middle',
+            rot: 'R180'
+          },
+          {
+            name: 'PB2',
+            x: '15.24',
+            y: '-2.54',
+            length: 'middle',
+            rot: 'R180'
+          },
+          {
+            name: 'PB3',
+            x: '15.24',
+            y: '-5.08',
+            length: 'middle',
+            rot: 'R180'
+          },
+          { name: 'PA6', x: '-15.24', y: '-7.62', length: 'middle' },
+          { name: 'PA7', x: '-15.24', y: '-10.16', length: 'middle' },
+          { name: 'PA1', x: '-15.24', y: '5.08', length: 'middle' },
+          { name: 'PA2', x: '-15.24', y: '2.54', length: 'middle' },
+          { name: 'PA3', x: '-15.24', y: '0', length: 'middle' },
+          { name: 'PA4', x: '-15.24', y: '-2.54', length: 'middle' },
+          { name: 'PA5', x: '-15.24', y: '-5.08', length: 'middle' }
+        ],
+        name: 'ATTINY841-SSU'
+      }
+    ]
+  }
+}
+Done in 0.28s.

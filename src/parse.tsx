@@ -165,6 +165,7 @@ export const parseEagleXML = (eagleXML: string): EagleJSON => {
       if (tagName === "library") return false
       if (tagName === "packages") return false
       if (tagName === "symbols") return false
+      if (tagName === "layers") return false
       if (tagName === "devicesets") return false
       if (tagName === "settings") return false
       if (tagName === "devices") return false
