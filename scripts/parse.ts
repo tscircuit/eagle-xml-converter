@@ -6,10 +6,12 @@ async function main() {
   console.dir(parseEagleXML(file.toString()), {
     depth: 1000,
   })
-  // await fs.promises.writeFile(
-  //   "test.json",
-  //   JSON.stringify(parseEagleXML(file.toString()))
-  // )
+  if (process.argv[3]) {
+    await fs.promises.writeFile(
+      process.argv[3],
+      JSON.stringify(parseEagleXML(file.toString()), null, "  ")
+    )
+  }
 }
 
 main()

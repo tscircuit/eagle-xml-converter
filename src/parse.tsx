@@ -154,6 +154,8 @@ export interface EagleJSON {
   }
 }
 
+const makeArray = (v: any) => (!v ? [] : Array.isArray(v) ? v : [v])
+
 export const parseEagleXML = (eagleXML: string): EagleJSON => {
   const parser = new XMLParser({
     ignoreAttributes: false,
@@ -169,6 +171,8 @@ export const parseEagleXML = (eagleXML: string): EagleJSON => {
       if (tagName === "devicesets") return false
       if (tagName === "settings") return false
       if (tagName === "devices") return false
+      if (tagName === "connects") return false
+      if (tagName === "gates") return false
       if (isAttribute) return false
       if (isLeafNode) return false
       return true
@@ -193,7 +197,7 @@ export const parseEagleXML = (eagleXML: string): EagleJSON => {
         (rawDS: RawDeviceSet): DeviceSet => {
           return {
             ...rawDS,
-            gates: rawDS.gates.gate,
+            gates: makeArray(rawDS.gates.gate),
             devices: rawDS.devices.device.map(
               (rawDevice: RawDevice): Device => {
                 return {

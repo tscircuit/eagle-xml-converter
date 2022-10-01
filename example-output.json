@@ -1,6 +1,9 @@
 {
   "version": "7.1.0",
-  "settings": { "alwaysvectorfont": "no", "verticaltext": "up" },
+  "settings": {
+    "alwaysvectorfont": "no",
+    "verticaltext": "up"
+  },
   "grid": {
     "distance": "0.1",
     "unitdist": "inch",
@@ -593,10 +596,88 @@
     "devicesets": [
       {
         "description": "MCU 8-bit ATtiny AVR CISC 8KB Flash 1.8V/2.5V/3.3V/5V 14-Pin SOIC W Tray",
-        "gates": undefined,
+        "gates": [
+          {
+            "name": "G$1",
+            "symbol": "ATTINY841-SSU",
+            "x": "0",
+            "y": "0"
+          }
+        ],
         "devices": [
           {
-            "connects": undefined,
+            "connects": [
+              {
+                "gate": "G$1",
+                "pin": "GND",
+                "pad": "14"
+              },
+              {
+                "gate": "G$1",
+                "pin": "PA0",
+                "pad": "13"
+              },
+              {
+                "gate": "G$1",
+                "pin": "PA1",
+                "pad": "12"
+              },
+              {
+                "gate": "G$1",
+                "pin": "PA2",
+                "pad": "11"
+              },
+              {
+                "gate": "G$1",
+                "pin": "PA3",
+                "pad": "10"
+              },
+              {
+                "gate": "G$1",
+                "pin": "PA4",
+                "pad": "9"
+              },
+              {
+                "gate": "G$1",
+                "pin": "PA5",
+                "pad": "8"
+              },
+              {
+                "gate": "G$1",
+                "pin": "PA6",
+                "pad": "7"
+              },
+              {
+                "gate": "G$1",
+                "pin": "PA7",
+                "pad": "6"
+              },
+              {
+                "gate": "G$1",
+                "pin": "PB0",
+                "pad": "2"
+              },
+              {
+                "gate": "G$1",
+                "pin": "PB1",
+                "pad": "3"
+              },
+              {
+                "gate": "G$1",
+                "pin": "PB2",
+                "pad": "5"
+              },
+              {
+                "gate": "G$1",
+                "pin": "PB3",
+                "pad": "4"
+              },
+              {
+                "gate": "G$1",
+                "pin": "VCC",
+                "pad": "1"
+              }
+            ],
             "name": "",
             "package": "SOIC127P599X175-14N"
           }
@@ -673,7 +754,12 @@
             "length": "middle",
             "rot": "R180"
           },
-          { "name": "PA0", "x": "-15.24", "y": "7.62", "length": "middle" },
+          {
+            "name": "PA0",
+            "x": "-15.24",
+            "y": "7.62",
+            "length": "middle"
+          },
           {
             "name": "GND",
             "x": "15.24",
@@ -703,13 +789,48 @@
             "length": "middle",
             "rot": "R180"
           },
-          { "name": "PA6", "x": "-15.24", "y": "-7.62", "length": "middle" },
-          { "name": "PA7", "x": "-15.24", "y": "-10.16", "length": "middle" },
-          { "name": "PA1", "x": "-15.24", "y": "5.08", "length": "middle" },
-          { "name": "PA2", "x": "-15.24", "y": "2.54", "length": "middle" },
-          { "name": "PA3", "x": "-15.24", "y": "0", "length": "middle" },
-          { "name": "PA4", "x": "-15.24", "y": "-2.54", "length": "middle" },
-          { "name": "PA5", "x": "-15.24", "y": "-5.08", "length": "middle" }
+          {
+            "name": "PA6",
+            "x": "-15.24",
+            "y": "-7.62",
+            "length": "middle"
+          },
+          {
+            "name": "PA7",
+            "x": "-15.24",
+            "y": "-10.16",
+            "length": "middle"
+          },
+          {
+            "name": "PA1",
+            "x": "-15.24",
+            "y": "5.08",
+            "length": "middle"
+          },
+          {
+            "name": "PA2",
+            "x": "-15.24",
+            "y": "2.54",
+            "length": "middle"
+          },
+          {
+            "name": "PA3",
+            "x": "-15.24",
+            "y": "0",
+            "length": "middle"
+          },
+          {
+            "name": "PA4",
+            "x": "-15.24",
+            "y": "-2.54",
+            "length": "middle"
+          },
+          {
+            "name": "PA5",
+            "x": "-15.24",
+            "y": "-5.08",
+            "length": "middle"
+          }
         ],
         "name": "ATTINY841-SSU"
       }

@@ -1,6 +1,6 @@
 {
   "name": "@tscircuit/eagle-xml-converter",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/index.js",
   "author": "seveibar <seveibar@gmail.com>",
   "license": "MIT",
@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "build": "tsup ./src --dts --sourcemap",
-    "parse:attiny": "yarn run esr scripts/parse.ts tests/attiny/attiny.xml"
+    "parse:attiny": "yarn run esr scripts/parse.ts tests/attiny/attiny.xml example-output.json"
   },
   "devDependencies": {
     "@types/node": "^18.7.23",
