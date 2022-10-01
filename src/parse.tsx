@@ -23,34 +23,34 @@ export interface Grid {
 export interface DrawGroup {
   name: string
   circle?: Array<{
-    x: string
-    y: string
-    radius: string
-    width: string
-    layer: string
+    x: number
+    y: number
+    radius: number
+    width: number
+    layer: number
   }>
   rectangle?: Array<{
-    x1: string
-    y1: string
-    x2: string
-    y2: string
-    layer: string
+    x1: number
+    y1: number
+    x2: number
+    y2: number
+    layer: number
   }>
   text?: Array<{
     "#text": string
-    x: string
-    y: string
-    size: string
-    layer: string
+    x: number
+    y: number
+    size: number
+    layer: number
     align: "top-left"
   }>
   wire?: Array<{
-    x1: string
-    y1: string
-    x2: string
-    y2: string
-    width: string
-    layer: string
+    x1: number
+    y1: number
+    x2: number
+    y2: number
+    width: number
+    layer: number
   }>
   smd?: Array<{
     name: string
@@ -68,8 +68,8 @@ export interface Package extends DrawGroup {}
 export interface Symbol extends DrawGroup {
   pin: Array<{
     name: string
-    x: string
-    y: string
+    x: number
+    y: number
     length: "middle"
     direction?: "pwr"
     rot?: "R180"
@@ -86,7 +86,7 @@ export interface Gate {
 export interface Connect {
   gate: string
   pin: string
-  pad: string
+  pad: number
 }
 
 export interface Device {
@@ -134,10 +134,10 @@ export interface RawEagleJSON {
 }
 
 export interface Layer {
-  number: string
+  number: number
   name: string
-  color: string
-  fill: string
+  color: number
+  fill: number
   visible: "yes" | "no"
   active: "yes" | "no"
 }
