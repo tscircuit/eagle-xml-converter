@@ -161,6 +161,7 @@ export const parseEagleXML = (eagleXML: string): EagleJSON => {
     ignoreAttributes: false,
     attributeNamePrefix: "",
     attributesGroupName: "",
+    parseAttributeValue: true,
     isArray(tagName, jPath, isLeafNode, isAttribute) {
       if (tagName === "drawing") return false
       if (tagName === "eagle") return false
