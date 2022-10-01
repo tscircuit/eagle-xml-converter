@@ -54,12 +54,12 @@ export interface DrawGroup {
   }>
   smd?: Array<{
     name: string
-    x: string
-    y: string
-    dx: string
-    dy: string
-    layer: string
-    roundness: string
+    x: number
+    y: number
+    dx: number
+    dy: number
+    layer: number
+    roundness: number
   }>
 }
 
