@@ -155,6 +155,13 @@ export interface EagleJSON {
 }
 
 const makeArray = (v: any) => (!v ? [] : Array.isArray(v) ? v : [v])
+const makeArrayToProps = (obj: any, keys: string[]) => {
+  const newObj = { ...obj }
+  for (const key of keys) {
+    newObj[key] = makeArray(obj[key])
+  }
+  return newObj
+}
 
 export const parseEagleXML = (eagleXML: string): EagleJSON => {
   const parser = new XMLParser({
@@ -193,7 +200,9 @@ export const parseEagleXML = (eagleXML: string): EagleJSON => {
     grid: raw.grid,
     layers: raw.layers.layer,
     library: {
-      packages: raw.library.packages.package,
+      packages: raw.library.packages.package.map((pkg) =>
+        makeArrayToProps(pkg, ["circle", "rect", "smd", "wire", "text"])
+      ),
       devicesets: raw.library.devicesets.deviceset.map(
         (rawDS: RawDeviceSet): DeviceSet => {
           return {

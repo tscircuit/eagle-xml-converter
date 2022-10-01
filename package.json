@@ -1,6 +1,6 @@
 {
   "name": "@tscircuit/eagle-xml-converter",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "main": "dist/index.js",
   "author": "seveibar <seveibar@gmail.com>",
   "license": "MIT",

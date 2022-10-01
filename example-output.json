@@ -388,13 +388,15 @@
   "library": {
     "packages": [
       {
-        "circle": {
-          "x": -4.44,
-          "y": 4.4,
-          "radius": 0.1,
-          "width": 0.2,
-          "layer": 21
-        },
+        "circle": [
+          {
+            "x": -4.44,
+            "y": 4.4,
+            "radius": 0.1,
+            "width": 0.2,
+            "layer": 21
+          }
+        ],
         "wire": [
           {
             "x1": -1.9475,
@@ -590,7 +592,8 @@
             "roundness": 25
           }
         ],
-        "name": "SOIC127P599X175-14N"
+        "name": "SOIC127P599X175-14N",
+        "rect": []
       }
     ],
     "devicesets": [
