@@ -10,7 +10,8 @@
   "scripts": {
     "build": "tsup ./src --dts --sourcemap",
     "parse:attiny": "yarn run esr scripts/parse.ts tests/attiny/attiny.xml example-output.json",
-    "parse:lilypad": "yarn run esr scripts/parse.ts tests/sparkfun/sf-lilypad-wearables.xml"
+    "parse:lilypad": "yarn run esr scripts/parse.ts tests/sparkfun/sf-lilypad-wearables.xml",
+    "yalc": "npm run build && yalc push"
   },
   "devDependencies": {
     "@semantic-release/commit-analyzer": "^9.0.2",

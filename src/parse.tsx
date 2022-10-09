@@ -203,19 +203,30 @@ export const parseEagleXML = (eagleXML: string): EagleJSON => {
       packages: raw.library.packages.package.map((pkg) =>
         makeArrayToProps(pkg, ["circle", "rect", "smd", "wire", "text"])
       ),
-      devicesets: raw.library.devicesets.deviceset.map(
+      devicesets: (raw.library.devicesets?.deviceset ?? []).map(
         (rawDS: RawDeviceSet): DeviceSet => {
-          return {
-            ...rawDS,
-            gates: makeArray(rawDS.gates.gate),
-            devices: rawDS.devices.device.map(
-              (rawDevice: RawDevice): Device => {
-                return {
-                  ...rawDevice,
-                  connects: rawDevice?.connects?.connect,
+          try {
+            return {
+              ...rawDS,
+              gates: makeArray(rawDS.gates.gate),
+              devices: rawDS.devices.device.map(
+                (rawDevice: RawDevice): Device => {
+                  return {
+                    ...rawDevice,
+                    connects: rawDevice?.connects?.connect,
+                  }
                 }
-              }
-            ),
+              ),
+            }
+          } catch (e) {
+            console.log(
+              `Issue parsing raw device set: ${JSON.stringify(
+                rawDS,
+                null,
+                "  "
+              )}`
+            )
+            throw e
           }
         }
       ),
