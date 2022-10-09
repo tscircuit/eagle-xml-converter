@@ -13,6 +13,10 @@
     "parse:lilypad": "yarn run esr scripts/parse.ts tests/sparkfun/sf-lilypad-wearables.xml"
   },
   "devDependencies": {
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/npm": "^9.0.1",
+    "@semantic-release/release-notes-generator": "^10.0.3",
     "@types/node": "^18.7.23",
     "esbuild": "^0.15.10",
     "esbuild-register": "^3.3.3",
