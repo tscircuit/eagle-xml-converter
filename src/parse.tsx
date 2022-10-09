@@ -209,7 +209,7 @@ export const parseEagleXML = (eagleXML: string): EagleJSON => {
             return {
               ...rawDS,
               gates: makeArray(rawDS.gates.gate),
-              devices: rawDS.devices.device.map(
+              devices: (rawDS.devices?.device || []).map(
                 (rawDevice: RawDevice): Device => {
                   return {
                     ...rawDevice,
