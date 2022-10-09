@@ -212,7 +212,7 @@ export const parseEagleXML = (eagleXML: string): EagleJSON => {
               (rawDevice: RawDevice): Device => {
                 return {
                   ...rawDevice,
-                  connects: rawDevice.connects.connect,
+                  connects: rawDevice?.connects?.connect,
                 }
               }
             ),

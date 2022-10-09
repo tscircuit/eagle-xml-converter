@@ -9,7 +9,8 @@
   ],
   "scripts": {
     "build": "tsup ./src --dts --sourcemap",
-    "parse:attiny": "yarn run esr scripts/parse.ts tests/attiny/attiny.xml example-output.json"
+    "parse:attiny": "yarn run esr scripts/parse.ts tests/attiny/attiny.xml example-output.json",
+    "parse:lilypad": "yarn run esr scripts/parse.ts tests/sparkfun/sf-lilypad-wearables.xml"
   },
   "devDependencies": {
     "@types/node": "^18.7.23",
