@@ -22,6 +22,7 @@ export interface Grid {
 
 export interface DrawGroup {
   name: string
+  description?: string
   circle?: Array<{
     x: number
     y: number
@@ -191,6 +192,8 @@ export const parseEagleXML = (eagleXML: string): EagleJSON => {
     ...parsedXML.eagle.drawing,
     version: parsedXML.eagle.version,
   }
+
+  console.log(raw.library.packages.package)
 
   return {
     version: raw.version,
