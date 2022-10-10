@@ -193,8 +193,6 @@ export const parseEagleXML = (eagleXML: string): EagleJSON => {
     version: parsedXML.eagle.version,
   }
 
-  console.log(raw.library.packages.package)
-
   return {
     version: raw.version,
     settings: raw.settings.setting.reduce((agg: any, setting) => {
